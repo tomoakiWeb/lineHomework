@@ -12,6 +12,7 @@
 		3226626C23B1A358003B2325 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3226626A23B1A358003B2325 /* HomeCell.xib */; };
 		3226626E23B1A618003B2325 /* HomeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626D23B1A618003B2325 /* HomeGroup.swift */; };
 		3226627023B1A6F3003B2325 /* HomeGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626F23B1A6F3003B2325 /* HomeGroupList.swift */; };
+		3226627223B22028003B2325 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226627123B22028003B2325 /* TimeViewController.swift */; };
 		3290CDCA23AB60AE00EAE65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDC923AB60AE00EAE65E /* AppDelegate.swift */; };
 		3290CDCC23AB60AE00EAE65E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */; };
 		3290CDCE23AB60AE00EAE65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCD23AB60AE00EAE65E /* ViewController.swift */; };
@@ -22,6 +23,10 @@
 		3290CDE023AB648300EAE65E /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3290CDDE23AB648300EAE65E /* CustomCell.xib */; };
 		3290CDE223AB68FD00EAE65E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDE123AB68FD00EAE65E /* Message.swift */; };
 		3290CDE423AB6AAF00EAE65E /* MessageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDE323AB6AAF00EAE65E /* MessageList.swift */; };
+		329B4CAA23B730EC008A12D7 /* TimeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CA823B730EC008A12D7 /* TimeCell.swift */; };
+		329B4CAB23B730EC008A12D7 /* TimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 329B4CA923B730EC008A12D7 /* TimeCell.xib */; };
+		329B4CB023B73E95008A12D7 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CAF23B73E95008A12D7 /* Time.swift */; };
+		329B4CB223B74667008A12D7 /* TimeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CB123B74667008A12D7 /* TimeList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +35,7 @@
 		3226626A23B1A358003B2325 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
 		3226626D23B1A618003B2325 /* HomeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroup.swift; sourceTree = "<group>"; };
 		3226626F23B1A6F3003B2325 /* HomeGroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroupList.swift; sourceTree = "<group>"; };
+		3226627123B22028003B2325 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		3290CDC623AB60AE00EAE65E /* LIneHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIneHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290CDC923AB60AE00EAE65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +48,10 @@
 		3290CDDE23AB648300EAE65E /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		3290CDE123AB68FD00EAE65E /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		3290CDE323AB6AAF00EAE65E /* MessageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageList.swift; sourceTree = "<group>"; };
+		329B4CA823B730EC008A12D7 /* TimeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCell.swift; sourceTree = "<group>"; };
+		329B4CA923B730EC008A12D7 /* TimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TimeCell.xib; sourceTree = "<group>"; };
+		329B4CAF23B73E95008A12D7 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		329B4CB123B74667008A12D7 /* TimeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,24 +84,53 @@
 		3290CDC823AB60AE00EAE65E /* LIneHomework */ = {
 			isa = PBXGroup;
 			children = (
+				329B4CA523B72F28008A12D7 /* Model */,
+				329B4CA723B72F40008A12D7 /* View */,
+				329B4CA623B72F33008A12D7 /* Controller */,
+				3290CDD723AB60B100EAE65E /* Info.plist */,
+			);
+			path = LIneHomework;
+			sourceTree = "<group>";
+		};
+		329B4CA523B72F28008A12D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3290CDE123AB68FD00EAE65E /* Message.swift */,
+				3290CDE323AB6AAF00EAE65E /* MessageList.swift */,
+				3226626D23B1A618003B2325 /* HomeGroup.swift */,
+				3226626F23B1A6F3003B2325 /* HomeGroupList.swift */,
+				329B4CAF23B73E95008A12D7 /* Time.swift */,
+				329B4CB123B74667008A12D7 /* TimeList.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		329B4CA623B72F33008A12D7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
 				3290CDC923AB60AE00EAE65E /* AppDelegate.swift */,
 				3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */,
 				3290CDCD23AB60AE00EAE65E /* ViewController.swift */,
+				3226626723B0F1A1003B2325 /* HomeViewController.swift */,
+				3226627123B22028003B2325 /* TimeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		329B4CA723B72F40008A12D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				3290CDCF23AB60AE00EAE65E /* Main.storyboard */,
 				3290CDD223AB60B100EAE65E /* Assets.xcassets */,
 				3290CDD423AB60B100EAE65E /* LaunchScreen.storyboard */,
-				3290CDD723AB60B100EAE65E /* Info.plist */,
 				3290CDDD23AB648300EAE65E /* CustomCell.swift */,
 				3290CDDE23AB648300EAE65E /* CustomCell.xib */,
-				3290CDE123AB68FD00EAE65E /* Message.swift */,
-				3290CDE323AB6AAF00EAE65E /* MessageList.swift */,
-				3226626723B0F1A1003B2325 /* HomeViewController.swift */,
 				3226626923B1A358003B2325 /* HomeCell.swift */,
 				3226626A23B1A358003B2325 /* HomeCell.xib */,
-				3226626D23B1A618003B2325 /* HomeGroup.swift */,
-				3226626F23B1A6F3003B2325 /* HomeGroupList.swift */,
+				329B4CA823B730EC008A12D7 /* TimeCell.swift */,
+				329B4CA923B730EC008A12D7 /* TimeCell.xib */,
 			);
-			path = LIneHomework;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329B4CAB23B730EC008A12D7 /* TimeCell.xib in Resources */,
 				3290CDD623AB60B100EAE65E /* LaunchScreen.storyboard in Resources */,
 				3290CDD323AB60B100EAE65E /* Assets.xcassets in Resources */,
 				3290CDE023AB648300EAE65E /* CustomCell.xib in Resources */,
@@ -167,11 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				329B4CB223B74667008A12D7 /* TimeList.swift in Sources */,
+				329B4CAA23B730EC008A12D7 /* TimeCell.swift in Sources */,
 				3290CDCE23AB60AE00EAE65E /* ViewController.swift in Sources */,
 				3290CDCA23AB60AE00EAE65E /* AppDelegate.swift in Sources */,
 				3226626E23B1A618003B2325 /* HomeGroup.swift in Sources */,
 				3226626B23B1A358003B2325 /* HomeCell.swift in Sources */,
 				3226627023B1A6F3003B2325 /* HomeGroupList.swift in Sources */,
+				329B4CB023B73E95008A12D7 /* Time.swift in Sources */,
+				3226627223B22028003B2325 /* TimeViewController.swift in Sources */,
 				3290CDE223AB68FD00EAE65E /* Message.swift in Sources */,
 				3290CDDF23AB648300EAE65E /* CustomCell.swift in Sources */,
 				3290CDCC23AB60AE00EAE65E /* SceneDelegate.swift in Sources */,

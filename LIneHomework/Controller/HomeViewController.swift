@@ -10,6 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var MyselfImageView: UIImageView!
     
@@ -77,6 +78,23 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 70.0
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    @IBAction func talkAction(_ sender: Any) {
+        let viewVC = self.storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        self.navigationController?.pushViewController(viewVC, animated: false)
+    }
+    
+    @IBAction func timeAction(_ sender: Any) {
+        let timeVC = self.storyboard?.instantiateViewController(identifier: "TimeViewController") as! TimeViewController
+        self.navigationController?.pushViewController(timeVC, animated: false)
+    }
+    
+    
+    
     
     
     
