@@ -10,13 +10,13 @@ import UIKit
 
 class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var MyselfImageView: UIImageView!
     
     var homeGroupList = HomeGroupList()
     //lazy遅延処理
     lazy var sectionTitle: NSArray = ["知り合いかも?","グループ \(self.homeGroupList.groupList.count)","友達 \(self.homeGroupList.friendList.count)"]
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +28,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         MyselfImageView.contentMode = .scaleAspectFill
         MyselfImageView.clipsToBounds = true
         MyselfImageView.layer.cornerRadius = MyselfImageView.frame.height / 2
-        
     }
     
     // セクション数
@@ -78,8 +77,22 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return 70.0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
     
+    @IBAction func talkAction(_ sender: Any) {
+        let viewVC = self.storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
+        self.navigationController?.pushViewController(viewVC, animated: false)
+    }
     
-
+    @IBAction func timeAction(_ sender: Any) {
+        let timeVC = self.storyboard?.instantiateViewController(identifier: "TimeViewController") as! TimeViewController
+        self.navigationController?.pushViewController(timeVC, animated: false)
+    }
     
+    @IBAction func newsAction(_ sender: Any) {
+        let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
+        self.navigationController?.pushViewController(newsVC, animated: false)
+    }
 }

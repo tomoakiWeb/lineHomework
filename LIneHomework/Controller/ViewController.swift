@@ -9,7 +9,6 @@
 import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-    
     @IBOutlet weak var tableView: UITableView!
     
     var messageList = MessageList()
@@ -44,12 +43,24 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         tableView.estimatedRowHeight = 70
         return 70
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 
     @IBAction func homeAction(_ sender: Any) {
-        print("home")
-        let homeViewControoler = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
-        self.navigationController?.pushViewController(homeViewControoler,animated: false)
+        let homeVC = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+        self.navigationController?.pushViewController(homeVC, animated: false)
     }
     
+    @IBAction func timeAction(_ sender: Any) {
+        let timeVC = self.storyboard?.instantiateViewController(identifier: "TimeViewController") as! TimeViewController
+        self.navigationController?.pushViewController(timeVC, animated: false)
+    }
+    
+    @IBAction func newsAction(_ sender: Any) {
+        let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
+        self.navigationController?.pushViewController(newsVC, animated: false)
+    }
 }
 
