@@ -58,13 +58,13 @@ class EconomyNewsViewController: UITableViewController, SegementSlideContentScro
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let webViewController = WebViewController()
         webViewController.modalTransitionStyle = .crossDissolve
         let newsItem = newsItems[indexPath.row]
         UserDefaults.standard.set(newsItem.url, forKey: "url")
         present(webViewController, animated: true, completion: nil)
     }
-    
      // 解析中に要素の開始タグがあったときに実行されるメソッド
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         currentElementName = nil

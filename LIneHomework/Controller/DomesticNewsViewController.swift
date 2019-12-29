@@ -58,6 +58,7 @@ class DomesticNewsViewController: UITableViewController, SegementSlideContentScr
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let webViewController = WebViewController()
         webViewController.modalTransitionStyle = .crossDissolve
         let newsItem = newsItems[indexPath.row]
