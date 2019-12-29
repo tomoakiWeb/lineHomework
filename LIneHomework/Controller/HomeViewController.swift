@@ -18,7 +18,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     //lazy遅延処理
     lazy var sectionTitle: NSArray = ["知り合いかも?","グループ \(self.homeGroupList.groupList.count)","友達 \(self.homeGroupList.friendList.count)"]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -29,7 +28,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         MyselfImageView.contentMode = .scaleAspectFill
         MyselfImageView.clipsToBounds = true
         MyselfImageView.layer.cornerRadius = MyselfImageView.frame.height / 2
-        
     }
     
     // セクション数
@@ -93,11 +91,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         self.navigationController?.pushViewController(timeVC, animated: false)
     }
     
-    
-    
-    
-    
-    
-
-    
+    @IBAction func newsAction(_ sender: Any) {
+        let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
+        self.navigationController?.pushViewController(newsVC, animated: false)
+    }
 }

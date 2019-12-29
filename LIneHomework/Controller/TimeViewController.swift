@@ -10,7 +10,6 @@ import UIKit
 
 class TimeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
-    
     @IBOutlet weak var tableView: UITableView!
     
     var timeList = TimeList()
@@ -60,5 +59,9 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
     @IBAction func talkAction(_ sender: Any) {
         let viewVC = self.storyboard?.instantiateViewController(identifier: "ViewController") as! ViewController
         self.navigationController?.pushViewController(viewVC, animated: false)
+    }
+    @IBAction func newsAction(_ sender: Any) {
+        let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
+        self.navigationController?.pushViewController(newsVC, animated: false)
     }
 }

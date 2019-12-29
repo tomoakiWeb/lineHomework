@@ -34,7 +34,12 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="8ZN-kg-jgF"/>
-                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="sgf-yI-3jM"/>
+                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="sgf-yI-3jM">
+                                        <connections>
+                                            <action selector="newsAction:" destination="BYZ-38-t0r" id="MtA-cr-xeq"/>
+                                            <segue destination="hQ1-Oq-8GT" kind="show" animates="NO" id="qf0-tu-YX4"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="Bc9-4u-vC7"/>
                                     <barButtonItem image="rectangle.dock" catalog="system" id="EWy-oV-upw"/>
                                 </items>
@@ -146,7 +151,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="a8C-jo-djg"/>
-                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="3H8-E6-Koe"/>
+                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="3H8-E6-Koe">
+                                        <connections>
+                                            <action selector="newsAction:" destination="3mR-XC-KTf" id="DHW-YL-dso"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="983-TA-O0A"/>
                                     <barButtonItem image="rectangle.dock" catalog="system" id="k3p-cP-LCm"/>
                                 </items>
@@ -245,7 +254,11 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PGv-dh-T8M"/>
                                     <barButtonItem title="Item" image="timer" catalog="system" id="3ae-rO-HAo"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="xpD-0P-NTC"/>
-                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="aRU-C9-gQ2"/>
+                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="aRU-C9-gQ2">
+                                        <connections>
+                                            <action selector="newsAction:" destination="OAR-S1-0Cs" id="fVh-Dk-IQm"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="BAc-ve-YED"/>
                                     <barButtonItem image="rectangle.dock" catalog="system" id="czR-KZ-vEu"/>
                                 </items>
@@ -293,6 +306,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DY1-84-UYa" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1940.5797101449277" y="811.60714285714278"/>
+        </scene>
+        <!--ニュース-->
+        <scene sceneID="Ixt-qA-DhZ">
+            <objects>
+                <viewController storyboardIdentifier="NewsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hQ1-Oq-8GT" customClass="NewsViewController" customModule="LIneHomework" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1QA-yV-Lsm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-2o-aLh">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <barButtonItem title="ホーム" image="house" catalog="system" id="NXg-HG-yto">
+                                        <connections>
+                                            <action selector="homeAction:" destination="hQ1-Oq-8GT" id="d2f-i7-nmZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9nJ-Og-Mee"/>
+                                    <barButtonItem title="Item" image="message" catalog="system" id="G6B-Ev-cTu">
+                                        <connections>
+                                            <action selector="talkAction:" destination="hQ1-Oq-8GT" id="OTc-Jr-p9s"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rQo-ov-5Il"/>
+                                    <barButtonItem title="Item" image="timer" catalog="system" id="wX0-qP-PAr">
+                                        <connections>
+                                            <action selector="timeAction:" destination="hQ1-Oq-8GT" id="JaI-iF-8xL"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="FSb-2z-cPc"/>
+                                    <barButtonItem title="Item" image="doc.text" catalog="system" id="xUf-lN-nW5"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="jSx-A2-D6W"/>
+                                    <barButtonItem image="rectangle.dock" catalog="system" id="UgF-14-PJk"/>
+                                </items>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </toolbar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3lT-8y-3Lg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" red="0.0091782531010000008" green="0.034488937050000001" blue="0.222943853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <items>
+                                    <barButtonItem style="plain" id="wBn-1F-1HX">
+                                        <textField key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="検索" textAlignment="natural" minimumFontSize="17" id="9SX-De-rJY">
+                                            <rect key="frame" x="20" y="5" width="374" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.2076791218" green="0.25966200070000001" blue="0.42300523480000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                    </barButtonItem>
+                                </items>
+                                <color key="tintColor" red="0.0091782531010000008" green="0.034488937050000001" blue="0.222943853" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.010274565560000001" green="0.038608528310000001" blue="0.24957377049999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ugI-D2-fih">
+                                <rect key="frame" x="0.0" y="132" width="414" height="686"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="58" id="Y8M-L2-Mgx">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="58"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Y8M-L2-Mgx" id="7W4-Lx-lJu">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="58"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="XCT-fp-bCQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="ニュース" id="ftJ-75-XVA">
+                        <barButtonItem key="leftBarButtonItem" id="9o3-2r-IxC">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="footerBar" destination="qp0-2o-aLh" id="lqK-Tq-GOn"/>
+                        <outlet property="headerBar" destination="3lT-8y-3Lg" id="Nch-U8-qP6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YBm-0g-C5a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1092.753623188406" y="847.76785714285711"/>
         </scene>
     </scenes>
     <resources>
