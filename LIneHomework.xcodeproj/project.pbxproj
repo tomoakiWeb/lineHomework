@@ -13,6 +13,7 @@
 		3226626E23B1A618003B2325 /* HomeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626D23B1A618003B2325 /* HomeGroup.swift */; };
 		3226627023B1A6F3003B2325 /* HomeGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626F23B1A6F3003B2325 /* HomeGroupList.swift */; };
 		3226627223B22028003B2325 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226627123B22028003B2325 /* TimeViewController.swift */; };
+		3226A03923B887D200C71F60 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A03823B887D200C71F60 /* WalletViewController.swift */; };
 		3290CDCA23AB60AE00EAE65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDC923AB60AE00EAE65E /* AppDelegate.swift */; };
 		3290CDCC23AB60AE00EAE65E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */; };
 		3290CDCE23AB60AE00EAE65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCD23AB60AE00EAE65E /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		3226626D23B1A618003B2325 /* HomeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroup.swift; sourceTree = "<group>"; };
 		3226626F23B1A6F3003B2325 /* HomeGroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroupList.swift; sourceTree = "<group>"; };
 		3226627123B22028003B2325 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		3226A03823B887D200C71F60 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		3290CDC623AB60AE00EAE65E /* LIneHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIneHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290CDC923AB60AE00EAE65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				329B4CBD23B86D36008A12D7 /* EconomyNewsViewController.swift */,
 				329B4CC123B86DA5008A12D7 /* ITNewsViewController.swift */,
 				329B4CB923B869DF008A12D7 /* WebViewController.swift */,
+				3226A03823B887D200C71F60 /* WalletViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				329B4CB823B7983D008A12D7 /* NewsItems.swift in Sources */,
 				329B4CB023B73E95008A12D7 /* Time.swift in Sources */,
 				3226627223B22028003B2325 /* TimeViewController.swift in Sources */,
+				3226A03923B887D200C71F60 /* WalletViewController.swift in Sources */,
 				3290CDE223AB68FD00EAE65E /* Message.swift in Sources */,
 				329B4CBC23B86CC1008A12D7 /* DomesticNewsViewController.swift in Sources */,
 				3290CDDF23AB648300EAE65E /* CustomCell.swift in Sources */,

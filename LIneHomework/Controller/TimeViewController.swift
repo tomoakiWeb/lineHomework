@@ -64,4 +64,8 @@ class TimeViewController: UIViewController, UITableViewDelegate, UITableViewData
         let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
         self.navigationController?.pushViewController(newsVC, animated: false)
     }
+    @IBAction func walletAction(_ sender: Any) {
+        let walletVC = self.storyboard?.instantiateViewController(identifier: "WalletViewController") as! WalletViewController
+        self.navigationController?.pushViewController(walletVC, animated: false)
+    }
 }
