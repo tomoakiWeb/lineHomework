@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		3226626E23B1A618003B2325 /* HomeGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626D23B1A618003B2325 /* HomeGroup.swift */; };
 		3226627023B1A6F3003B2325 /* HomeGroupList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226626F23B1A6F3003B2325 /* HomeGroupList.swift */; };
 		3226627223B22028003B2325 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226627123B22028003B2325 /* TimeViewController.swift */; };
+		3226A03923B887D200C71F60 /* WalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3226A03823B887D200C71F60 /* WalletViewController.swift */; };
 		3290CDCA23AB60AE00EAE65E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDC923AB60AE00EAE65E /* AppDelegate.swift */; };
 		3290CDCC23AB60AE00EAE65E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */; };
 		3290CDCE23AB60AE00EAE65E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3290CDCD23AB60AE00EAE65E /* ViewController.swift */; };
@@ -34,6 +35,9 @@
 		329B4CBC23B86CC1008A12D7 /* DomesticNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CBB23B86CC1008A12D7 /* DomesticNewsViewController.swift */; };
 		329B4CBE23B86D36008A12D7 /* EconomyNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CBD23B86D36008A12D7 /* EconomyNewsViewController.swift */; };
 		329B4CC223B86DA5008A12D7 /* ITNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329B4CC123B86DA5008A12D7 /* ITNewsViewController.swift */; };
+		32D2D5D723C1D27200F7C8F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 32D2D5D623C1D27200F7C8F2 /* GoogleService-Info.plist */; };
+		32D2D5D923C1D5BB00F7C8F2 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D5D823C1D5BB00F7C8F2 /* ChatViewController.swift */; };
+		32D2D5DB23C1EF4F00F7C8F2 /* MockMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D2D5DA23C1EF4F00F7C8F2 /* MockMessage.swift */; };
 		F98B0E7E7D788717B003D21A /* Pods_LIneHomework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 946448DB46C9DA911AB68727 /* Pods_LIneHomework.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +48,7 @@
 		3226626D23B1A618003B2325 /* HomeGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroup.swift; sourceTree = "<group>"; };
 		3226626F23B1A6F3003B2325 /* HomeGroupList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGroupList.swift; sourceTree = "<group>"; };
 		3226627123B22028003B2325 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		3226A03823B887D200C71F60 /* WalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletViewController.swift; sourceTree = "<group>"; };
 		3290CDC623AB60AE00EAE65E /* LIneHomework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LIneHomework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3290CDC923AB60AE00EAE65E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3290CDCB23AB60AE00EAE65E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +72,9 @@
 		329B4CBB23B86CC1008A12D7 /* DomesticNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomesticNewsViewController.swift; sourceTree = "<group>"; };
 		329B4CBD23B86D36008A12D7 /* EconomyNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EconomyNewsViewController.swift; sourceTree = "<group>"; };
 		329B4CC123B86DA5008A12D7 /* ITNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITNewsViewController.swift; sourceTree = "<group>"; };
+		32D2D5D623C1D27200F7C8F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		32D2D5D823C1D5BB00F7C8F2 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		32D2D5DA23C1EF4F00F7C8F2 /* MockMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMessage.swift; sourceTree = "<group>"; };
 		32FDFE7443FDC85C2F5CEB1A /* Pods-LIneHomework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIneHomework.release.xcconfig"; path = "Target Support Files/Pods-LIneHomework/Pods-LIneHomework.release.xcconfig"; sourceTree = "<group>"; };
 		946448DB46C9DA911AB68727 /* Pods_LIneHomework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LIneHomework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD7838AF4D645752EEC44151 /* Pods-LIneHomework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LIneHomework.debug.xcconfig"; path = "Target Support Files/Pods-LIneHomework/Pods-LIneHomework.debug.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +117,7 @@
 				329B4CA723B72F40008A12D7 /* View */,
 				329B4CA623B72F33008A12D7 /* Controller */,
 				3290CDD723AB60B100EAE65E /* Info.plist */,
+				32D2D5D623C1D27200F7C8F2 /* GoogleService-Info.plist */,
 			);
 			path = LIneHomework;
 			sourceTree = "<group>";
@@ -123,6 +132,7 @@
 				329B4CAF23B73E95008A12D7 /* Time.swift */,
 				329B4CB123B74667008A12D7 /* TimeList.swift */,
 				329B4CB723B7983D008A12D7 /* NewsItems.swift */,
+				32D2D5DA23C1EF4F00F7C8F2 /* MockMessage.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -141,6 +151,8 @@
 				329B4CBD23B86D36008A12D7 /* EconomyNewsViewController.swift */,
 				329B4CC123B86DA5008A12D7 /* ITNewsViewController.swift */,
 				329B4CB923B869DF008A12D7 /* WebViewController.swift */,
+				3226A03823B887D200C71F60 /* WalletViewController.swift */,
+				32D2D5D823C1D5BB00F7C8F2 /* ChatViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -189,6 +201,7 @@
 				3290CDC223AB60AE00EAE65E /* Sources */,
 				3290CDC323AB60AE00EAE65E /* Frameworks */,
 				3290CDC423AB60AE00EAE65E /* Resources */,
+				488F6354C2D0D6B6D97C0F20 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +250,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D2D5D723C1D27200F7C8F2 /* GoogleService-Info.plist in Resources */,
 				329B4CAB23B730EC008A12D7 /* TimeCell.xib in Resources */,
 				3290CDD623AB60B100EAE65E /* LaunchScreen.storyboard in Resources */,
 				3290CDD323AB60B100EAE65E /* Assets.xcassets in Resources */,
@@ -249,6 +263,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		488F6354C2D0D6B6D97C0F20 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LIneHomework/Pods-LIneHomework-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LIneHomework/Pods-LIneHomework-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LIneHomework/Pods-LIneHomework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		6B1A45249D95097E03710372 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -281,6 +312,7 @@
 				329B4CB223B74667008A12D7 /* TimeList.swift in Sources */,
 				329B4CC223B86DA5008A12D7 /* ITNewsViewController.swift in Sources */,
 				329B4CBA23B869DF008A12D7 /* WebViewController.swift in Sources */,
+				32D2D5DB23C1EF4F00F7C8F2 /* MockMessage.swift in Sources */,
 				329B4CAA23B730EC008A12D7 /* TimeCell.swift in Sources */,
 				3290CDCE23AB60AE00EAE65E /* ViewController.swift in Sources */,
 				329B4CB423B78653008A12D7 /* NewsViewController.swift in Sources */,
@@ -293,6 +325,8 @@
 				329B4CB823B7983D008A12D7 /* NewsItems.swift in Sources */,
 				329B4CB023B73E95008A12D7 /* Time.swift in Sources */,
 				3226627223B22028003B2325 /* TimeViewController.swift in Sources */,
+				3226A03923B887D200C71F60 /* WalletViewController.swift in Sources */,
+				32D2D5D923C1D5BB00F7C8F2 /* ChatViewController.swift in Sources */,
 				3290CDE223AB68FD00EAE65E /* Message.swift in Sources */,
 				329B4CBC23B86CC1008A12D7 /* DomesticNewsViewController.swift in Sources */,
 				3290CDDF23AB648300EAE65E /* CustomCell.swift in Sources */,

@@ -46,6 +46,8 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        let chatVC = ChatViewController()
+        self.navigationController?.pushViewController(chatVC, animated: true)
     }
 
     @IBAction func homeAction(_ sender: Any) {
@@ -61,6 +63,11 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     @IBAction func newsAction(_ sender: Any) {
         let newsVC = self.storyboard?.instantiateViewController(identifier: "NewsViewController") as! NewsViewController
         self.navigationController?.pushViewController(newsVC, animated: false)
+    }
+    
+    @IBAction func walletAction(_ sender: Any) {
+        let walletVC = self.storyboard?.instantiateViewController(identifier: "WalletViewController") as! WalletViewController
+        self.navigationController?.pushViewController(walletVC, animated: false)
     }
 }
 

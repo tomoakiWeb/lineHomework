@@ -61,4 +61,8 @@ class NewsViewController: SegementSlideViewController {
         let timeVC = self.storyboard?.instantiateViewController(identifier: "TimeViewController") as! TimeViewController
         self.navigationController?.pushViewController(timeVC, animated: false)
     }
+    @IBAction func walletAction(_ sender: Any) {
+        let walletVC = self.storyboard?.instantiateViewController(identifier: "WalletViewController") as! WalletViewController
+        self.navigationController?.pushViewController(walletVC, animated: false)
+    }
 }
